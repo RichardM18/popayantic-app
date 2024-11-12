@@ -1,0 +1,315 @@
+/* Estilos generales de la pag */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Menu flotante con los bordes redondeados */
+nav.floating-menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(36, 36, 36, 0.447);
+    padding: 10px 20px;
+    border-radius: 30px;
+    z-index: 10;
+}
+
+nav.floating-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+/* ancho del menu */
+nav.floating-menu ul li {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+/* decoracion al pasar el mouse por los botones del menú */
+nav.floating-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav.floating-menu ul li a:hover {
+    background-color: #f39c12;
+}
+
+.inicio-icon {
+    width: 70px;
+    height: 25px;
+}
+
+/* Imagen grande introductoria */
+.intro-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sección de contenido con imagen a la izquierda */
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 4000px;
+    border-radius: 30px;
+}
+
+.content-right {
+    flex: 1;
+    padding: 0 20px;
+}
+
+/* Botones centrados */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.center-buttons button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center-buttons button:hover {
+    background-color: #3b3b3b;
+}
+
+/* Invertido: Imagen a la derecha y texto a la izquierda (but no) */
+.inverted .content-left {
+    order: 1;
+}
+
+/* Imagen a la derecha y contenido a la izquierda x2 */
+.inverted .content-right {
+    order: 1;
+}
+
+/* Imagen grande en todo el ancho de la pantalla con texto sobre ella */
+.full-width-image-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay-text h2 {
+    margin: 0;
+}
+
+/* Pie de página */
+footer {
+    position: fixed;
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.footer-buttons {
+    margin-top: 10px;
+}
+
+.footer-buttons button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-buttons button:hover {
+    background-color: #e67e22;
+}
+
+.footer-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+/* _________________________________________________________ */
+
+/* Estilos generales */
+
+
+/* Encabezado */
+header {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección principal */
+main {
+    padding: 20px;
+}
+
+.intro {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.rutas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ruta {
+    background-color: #2d344b;
+    color: #fff;
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ruta h3 {
+    margin-top: 0;
+}
+
+.ruta ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #34495e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Ajustes generales para la navegación */
+nav.floating-menu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(36, 36, 36, 0.447);
+    padding: 10px 20px;
+    border-radius: 30px;
+    z-index: 10;
+    width: auto; /* Asegura que el menú ocupe el espacio necesario */
+    font-family: 'Istok Web', sans-serif;
+}
+
+/* Menú en una sola línea con espacio ajustado */
+nav.floating-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap; /* Evita que los elementos se vayan a otra línea */
+}
+
+/* Reducir el margen entre elementos del menú */
+nav.floating-menu ul li {
+    display: inline-block;
+    margin-right: 20px; /* Ajusta el margen entre los elementos del menú */
+}
+
+/* Asegurar que el texto quepa en una sola línea */
+nav.floating-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px; /* Reduce ligeramente el tamaño del texto */
+    white-space: nowrap; /* Evita que los elementos del menú se dividan en dos líneas */
+}
+
+/* Ajuste de tamaño de logo */
+.inicio-icon {
+    width: 100px; /* Aumenta el tamaño del logo */
+    height: auto; /* Mantén la proporción del logo */
+}
+
+nav.floating-menu ul li a:hover {
+    background-color: #f39c12;
+}
