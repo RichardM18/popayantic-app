@@ -5,10 +5,17 @@ header {
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #424d5f; /* Fondo blanco para el menú */
+    background-color: #ffffff; /* Fondo blanco para el menú */
     z-index: 10; /* Asegura que el menú esté por encima del contenido */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
 }
+
+.text-intro{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
 
 
 /* Sección del mapa */
