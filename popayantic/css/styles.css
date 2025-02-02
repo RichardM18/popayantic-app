@@ -129,8 +129,6 @@ nav.floating-menu ul li a:hover {
 
 .center-buttons button {
     font-size: 20px;
-    background-color: #da7d21;
-    color: white;
     border: none;
     padding: 20px 30px;
     margin: 0 60px;
@@ -201,7 +199,6 @@ footer p {
 }
 
 .footer-buttons button {
-    background-color: #127ee2;
     color: white;
     border: none;
     padding: 8px 15px;

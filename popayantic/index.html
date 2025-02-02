@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Página de Turismo</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
 
@@ -57,8 +58,8 @@
 
     <!-- Dos botones centrados debajo del punto 4 (imagen la iglesia) -->
     <section class="center-buttons">
-        <button onclick="location.href='rutas.html'">Explorar Rutas</button>
-        <button onclick="location.href='cortometrajes.html'">Ver Cortometrajes</button>
+        <button class="explorar-rutas" onclick="location.href='rutas.html'">Explorar Rutas</button>
+        <button class="calendario-eventos" onclick="location.href='calendario.html'">Calendario de Eventos</button>
     </section>
 
     <!-- Imagen a la derecha y texto a la izquierda (invertido respecto a la anterior) -->
@@ -81,8 +82,8 @@
 
     <!-- Otros dos botones centrados debajo del punto 6 (imagen de la historia) -->
     <section class="center-buttons">
-        <button onclick="location.href='calendario.html'">Calendario de Eventos</button>
-        <button onclick="location.href='contacto.html'">Contacto</button>
+        <button class="ver-cortometrajes" onclick="location.href='cortometrajes.html'">Ver Cortometrajes</button>
+        <button class="contacto" onclick="location.href='contacto.html'">Contacto</button>
     </section>
 
     <!-- Imagen grande en todo el ancho de la pantalla con texto sobre ella -->
@@ -104,15 +105,22 @@
 
     <!-- Pie de página con botones -->
     <footer>
-        <p>Secretaría de Cultura | Oficina de Turismo Popayán</p>
-        <p>Dirección: Carrera 5 No. 5-18 Centro Histórico, Popayán</p>
-        <p>Teléfono: 28294727 ext. 220 | E-mail: turismo@popayan.gov.co</p>
         <div class="footer-buttons">
-            <button><a href="https://www.popayan.gov.co/SecretariasyEntidades/SecCulturaTurismo/Paginas" target="_blank">
-                Secretaría de turismo</a></button>
-            <button><a href="https://www.popayan.gov.co/" target="_blank">Alcaldía de Popayán</a></button>
-            <button><a href="https://fup.edu.co/" target="_blank">Fundacion Universitaria de Popayán</a></button>
-            <button><a href="contacto.html">Acerca dé</a></button>
+            <button class="btn_turismo">
+                <a href="https://www.popayan.gov.co/SecretariasyEntidades/SecCulturaTurismo/Paginas" target="_blank">
+                <img src="https://www.popayan.gov.co/SecretariasyEntidades/Turismo/PublishingImages/Paginas/Marca-Popayan/Marca%20Popayan%202024.png" alt="" /></a>
+            </button>
+            <button class="btn_cine">
+                <a href="https://cinecultivo.com" target="_blank">
+                <img src="https://cinecultivo.com/img/logo/negro%20sobre%20blanco%20o%20color.png" alt="" /></a>   
+            </button>
+            <button class="btn_fup">
+                <a href="https://fup.edu.co" target="_blank">
+                <img src="https://fup.edu.co/wp-content/uploads/Logo-FUP-2018-Isotipo-01-300x300-1.png" alt="" /></a>   
+            </button>
+            <button>
+                <a href="contacto.html">Acerca dé</a>
+            </button>
         </div>
     </footer>
 </body>
