@@ -1,0 +1,202 @@
+/* Parte superior */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Fondo blanco para el menú */
+    z-index: 10; /* Asegura que el menú esté por encima del contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
+}
+
+.text-intro{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+
+
+/* Sección del mapa */
+#map-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#map {
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Estilos para las tarjetas de rutas turísticas */
+.rutas-turisticas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.ruta-card {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.ruta-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.ruta-content {
+    padding: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.btn-maps {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-maps:hover {
+    background-color: #0056b3;
+}
+
+
+.logo-agencia {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    margin: 0 10px;
+}
+
+.contenedor-logo-emp {
+    display: flex;
+    justify-content: space-between; /* Ajusta el espacio entre los enlaces */
+  }
+
+
+/* Estilos para las tarjetas de rutas turísticas */
+.ruta {
+    background-color: rgb(47, 56, 81); /* Fondo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(197, 6, 6, 0.1); /* Sombra para un efecto 3D */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Espaciado externo y centrado */
+    max-width: 300px; /* Ancho máximo de la tarjeta */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para la imagen que hay dentro de la tarjeta */
+.ruta img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* La altura se ajusta automaticamente */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
+    max-height: 200px; /* Limita la altura de la imagen */
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+}
+
+/* Estilos para los botones de maps */
+.btn-maps {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-maps:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
+
+/* Botones footer*/
+
+.btn_turismo {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina bordes */
+    padding: 0; /* Elimina padding */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por el botón */
+    display: inline-block; /* Asegura que el botón sea inline */
+    width: 200px; /* Ancho del botón ajustado */
+    height: auto; /* Altura automática para mantener proporción */
+    text-align: center; /* Centra el contenido */
+}
+
+.btn_turismo a {
+    text-decoration: none; /* Elimina subrayado del enlace */
+}
+
+.btn_turismo img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
+    height: auto; /* Mantiene proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    display: block; /* Elimina espacio blanco debajo de la imagen */
+}
+
+
+.btn_cine {
+    width: 100px; /* Tamaño cuadrado */
+    height: 100px;
+    overflow: hidden; /* Asegurar que el contenido se mantenga dentro */
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_cine img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 100%;
+    object-fit: cover; /* Mantener proporción y recortar si es necesario */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.btn_cine:hover img {
+    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
+    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+}
+
+.btn_fup {
+    width: 100px; /* Tamaño cuadrado */
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_fup img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 100%;
+    object-fit: cover; /* Mantener proporción y recortar si es necesario */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.btn_fup:hover img {
+    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
+    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+}

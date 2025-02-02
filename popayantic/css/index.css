@@ -1,0 +1,93 @@
+.explorar-rutas {
+    background-color: #EFB832;
+    color: black; /* Cambia esto según el color del texto que prefieras */
+}
+
+.ver-cortometrajes {
+    background-color: #1C9838;
+    color: white;
+}
+
+.calendario-eventos {
+    background-color: #D80D7E;
+    color: white;
+}
+
+.contacto {
+    background-color: #96492A;
+    color: white;
+}
+
+/* Opcional: estilos generales para todos los botones */
+button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn_turismo {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Elimina bordes */
+    padding: 0; /* Elimina padding */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por el botón */
+    display: inline-block; /* Asegura que el botón sea inline */
+    width: 200px; /* Ancho del botón ajustado */
+    height: auto; /* Altura automática para mantener proporción */
+    text-align: center; /* Centra el contenido */
+}
+
+.btn_turismo a {
+    text-decoration: none; /* Elimina subrayado del enlace */
+}
+
+.btn_turismo img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
+    height: auto; /* Mantiene proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    display: block; /* Elimina espacio blanco debajo de la imagen */
+}
+
+
+.btn_cine {
+    width: 100px; /* Tamaño cuadrado */
+    height: 100px;
+    overflow: hidden; /* Asegurar que el contenido se mantenga dentro */
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_cine img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 100%;
+    object-fit: cover; /* Mantener proporción y recortar si es necesario */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.btn_cine:hover img {
+    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
+    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+}
+
+.btn_fup {
+    width: 100px; /* Tamaño cuadrado */
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.btn_fup img {
+    width: 100%; /* Imagen ajustada al contenedor */
+    height: 100%;
+    object-fit: cover; /* Mantener proporción y recortar si es necesario */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+}
+
+.btn_fup:hover img {
+    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
+    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+}
