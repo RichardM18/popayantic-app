@@ -5,10 +5,13 @@ nav.floating-menu, nav.floating-menu2 {
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 15px;
     z-index: 10;
     width: auto;
     font-family: 'Istok Web', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav.floating-menu {
@@ -16,7 +19,7 @@ nav.floating-menu {
 }
 
 nav.floating-menu2 {
-    background-color: rgb(239, 166, 10);
+    background-color: rgb(224,158,38);
 }
 
 nav.floating-menu ul, nav.floating-menu2 ul {
@@ -24,13 +27,13 @@ nav.floating-menu ul, nav.floating-menu2 ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
 }
 
 nav.floating-menu ul li, nav.floating-menu2 ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin: 0 10px;
 }
 
 nav.floating-menu ul li a, nav.floating-menu2 ul li a {
@@ -40,6 +43,8 @@ nav.floating-menu ul li a, nav.floating-menu2 ul li a {
     border-radius: 5px;
     font-size: 14px;
     white-space: nowrap;
+    display: block;
+    text-align: center;
 }
 
 nav.floating-menu ul li a:hover {
@@ -50,16 +55,159 @@ nav.floating-menu2 ul li a:hover {
     background-color: #ab6701;
 }
 
-/* Ajuste de tamaño de logo */
-.inicio-icon {
-    width: 100px;
-    height: auto;
+/* Contenedor del icono de hamburguesa y la imagen */
+.hamburger-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
 }
 
-/*Footer*/
+/* Estilo de la imagen (logo) */
+.hamburger-container img.inicio-icon {
+    width: 100px; /* Ajustamos el tamaño de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    nav.floating-menu, nav.floating-menu2 {
+        top: 10px;
+        width: 90%;
+        padding: 8px 15px;
+        margin-left: 10px; /* Margen izquierdo para móviles */
+    }
+
+    /* Cambiar la posición del menú para que se despliegue desde el lado derecho */
+    nav.floating-menu, nav.floating-menu2 {
+        left: auto;
+        right: 10px; /* Alineación a la derecha */
+        transform: translateX(0); /* Sin transformaciones horizontales */
+    }
+
+    /* Menú vertical en móviles */
+    nav.floating-menu ul, nav.floating-menu2 ul {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        justify-content: flex-start; /* Alineación del contenido al inicio */
+        display: none; /* Escondemos el menú por defecto */
+        position: absolute; /* Posicionamos el menú debajo del contenedor */
+        top: 100%; /* Alineamos el menú justo debajo del contenedor */
+        left: 0; /* Alineamos el menú con el borde izquierdo */
+        width: 100%; /* Ancho completo */
+        background-color: rgb(239, 166, 10); /* Igual al navbar */
+        border-radius:0px 0px;
+    }
+
+    nav.floating-menu ul.show-menu, nav.floating-menu2 ul.show-menu {
+        display: flex; /* Mostrar el menú cuando se active */
+    }
+
+    /* Ajustar los márgenes de los elementos */
+    nav.floating-menu ul li, nav.floating-menu2 ul li {
+        margin: 5px 0;
+    }
+
+    nav.floating-menu ul li a, nav.floating-menu2 ul li a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    /* Mostrar el icono de hamburguesa solo en móviles */
+    .hamburger-icon {
+        display: block;
+        font-size: 24px; /* Ajustar el tamaño */
+        padding: 10px;
+        background-color: rgb(239, 166, 10);
+        border-radius: 5px;
+        color: white;
+    }
+
+    /* Cambiar el contenedor cuando sea móvil */
+    .hamburger-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Centra el contenido (icono + logo) */
+        width: 100%;
+        gap: 10px; /* Espacio entre la imagen y el icono */
+    }
+
+    /* Asegurar que la imagen esté centrada cuando sea móvil */
+    .hamburger-container img.inicio-icon {
+        width: 130px; /* Ajustar el tamaño de la imagen */
+        height: auto;
+        margin: 0 auto;
+        padding-left: 50PX;
+    }
+
+    .hamburger-container .hamburger-icon {
+        order: 1; /* Coloca el icono de hamburguesa a la izquierda */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav.floating-menu, nav.floating-menu2 {
+        top: 5px;
+        width: 95%;
+        padding: 5px 10px;
+        border-radius: 0px 20px 0px 0px;
+        
+    }
+}
+    
+/* Para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    nav.floating-menu, nav.floating-menu2 {
+        top: 5px;
+        width: 95%;
+        padding: 5px 10px;
+        border-radius: 0px 20px 0px 0px;
+    }
+
+    nav.floating-menu ul, nav.floating-menu2 ul {
+        flex-direction: column; /* Lista en columna */
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    nav.floating-menu ul li, nav.floating-menu2 ul li {
+        margin: 5px 0;
+        
+    }
+
+    nav.floating-menu ul li a, nav.floating-menu2 ul li a {
+        font-size: 12px;
+        padding: 5px 10px;
+        text-align: center;
+        
+    }
+
+    .inicio-icon {
+        display: none;
+    }
+
+    .hamburger-icon {
+        font-size: 20px; /* Aún más pequeño en pantallas muy pequeñas */
+        padding: 6px;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .hamburger-icon {
+        display: none;
+    }
+
+    
+}
+/* FOOTER */
 footer {
     background-color: white;
     padding: 20px 0;
+    position: relative; /* Para evitar que el footer se superponga */
+    margin-top: 50px; /* Agregar margen superior para separar del navbar en pantallas pequeñas */
 }
 
 .footer-container {
@@ -67,6 +215,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas si es necesario */
 }
 
 .footer-logo img {
@@ -93,3 +242,44 @@ footer {
     width: auto !important;
 }
 
+/* Responsividad a partir de 831px */
+@media screen and (max-width: 831px) {
+    .footer-container {
+        padding: 0 20px; /* Reducir padding */
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        gap: 20px; /* Espaciado entre elementos */
+        align-items: center; /* Centrar los elementos */
+    }
+
+    .footer-logo img {
+        height: 50px; /* Reducir tamaño del logo */
+    }
+
+    .footer-links {
+        flex-direction: column; /* Mostrar los enlaces en columna */
+        gap: 10px; /* Reducir el espacio entre los enlaces */
+        align-items: center; /* Centrar los enlaces */
+    }
+
+    .footer-links a img {
+        height: 60px; /* Reducir el tamaño de las imágenes de los enlaces */
+    }
+
+    .logo_fup img {
+        height: 120px !important; /* Reducir el tamaño de la imagen de FUP */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer-logo img {
+        height: 40px; /* Ajustar el tamaño del logo para pantallas más pequeñas */
+    }
+
+    .footer-links a img {
+        height: 50px; /* Ajustar las imágenes de los enlaces */
+    }
+
+    .logo_fup img {
+        height: 100px !important; /* Ajustar el logo FUP */
+    }
+}

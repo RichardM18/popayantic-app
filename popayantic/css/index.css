@@ -1,20 +1,24 @@
 .explorar-rutas {
-    background-color: #EFB832;
-    color: black;
-}
-
-.ver-cortometrajes {
-    background-color: #1C9838;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
+    background-color: rgb(225,12,125);
     color: white;
 }
 
+.ver-cortometrajes {
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
+    background-color: rgb(149,210,244);
+    color: black;
+}
+
 .calendario-eventos {
-    background-color: #D80D7E;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
+    background-color: rgb(159,71,41);
     color: white;
 }
 
 .contacto {
-    background-color: #96492A;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
+    background-color: rgb(24,143,49);
     color: white;
 }
 
@@ -23,7 +27,7 @@ button {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 * {
@@ -33,7 +37,8 @@ button {
 }
 
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
+    
 }
 
 /* Estilo de texto para la info al lado de las imagenes */
@@ -67,9 +72,9 @@ body {
     text-align: left;
     background-color: rgba(0, 0, 0, 0.395);
     padding: 20px 30px;
-    border-radius: 90px;
+    border-radius: 15px;
     max-width: 900px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif; 
     font-size: 20px;
     line-height: 1.4;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.062);
@@ -89,7 +94,7 @@ body {
 .side-image {
     width: 100%;
     max-width: 4000px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .content-right {
@@ -123,7 +128,7 @@ body {
     border: none;
     padding: 20px 30px;
     margin: 0 60px;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -162,10 +167,9 @@ body {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .overlay-text h2 {
     margin: 0;
 }
-

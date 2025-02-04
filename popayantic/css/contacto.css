@@ -1,70 +1,80 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
     background-color: #f0f0f0;
-    font-family: 'Istok Web', sans-serif;  /* Se aplica la fuente en el body */
-    flex-direction: column; 
-    position: center;
+    font-family: 'Istok Web', sans-serif;
+    height: 100%; /* Aseguramos que la página ocupe toda la altura */
 }
 
+/* Contenedor para la tarjeta centrada */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 65vh; /* Ajustamos la altura del contenedor al 70% de la ventana */
+    margin-bottom: 0; /* Sin espacio extra debajo */
+}
+
+/* Estilo del card */
 .card {
-    width: 40vw;  /* Utilizamos un valor en vw para que el card ocupe un 60% del ancho de la pantalla */
-    height: 70vh; /* Ajustamos la altura también en vh (view height) para un diseño más adaptable */
+    width: 60vw; /* En pantallas grandes, la card ocupa el 70% del ancho de la pantalla */
+    margin-top: 100px; /* Agregar margen superior en dispositivos móviles */
+    max-width: 700px; /* Máximo ancho para la tarjeta */
+    height: fit-content; /* Deja que la altura se ajuste de manera flexible */
+    min-height: 400px; /* Establece una altura mínima para la tarjeta */
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    padding: 100px;
+    padding: 5px; /* Aumentamos el padding para hacerlo más grande */
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    justify-content: flex-start;
     align-items: center;
-    border: 2px solid #ddd; /* Un borde sutil */
+    border: 2px solid #ddd;
+    margin-bottom: 0; /* Elimina el margen adicional debajo de la tarjeta */
 }
 
-
+/* Estilo de los títulos */
 .card h1 {
-    font-size: 2.5em;
-    margin: 0;  /* Elimina el margen entre los dos h1 */
-    text-align: center;  /* Centra el texto */
-    font-weight: bold;   /* Hace el texto en negrita */
+    font-size: 2em; /* Aumentamos el tamaño del título */
+    margin: 10px 0; /* Un pequeño margen para separar los títulos */
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    word-wrap: break-word; /* Esto asegura que las palabras largas se ajusten */
 }
 
-p {
-    font-size: 1em;
+/* Estilo de los párrafos */
+.card p {
+    font-size: 1em; /* Aumentamos el tamaño del texto */
     color: #0c0000;
-    margin: 10px;  /* Elimina el margen */
+    margin: 10px 0;
 }
 
-
-.div-p {
-    margin-top: 40px;  
-    text-align: center;  /* Centra el contenido dentro del div */
+/* Estilo del contenedor de los párrafos */
+.card .div-p {
+    margin-top: 20px; /* Aumentamos el espacio entre los párrafos */
+    text-align: center;
 }
 
-
-/* ICONOS RED SOCIAL */
-
-
-.social-icons {
+/* ICONOS DE REDES SOCIALES */
+.card .social-icons {
     display: flex;
-    justify-content: space-around;  /* Distribuye los íconos de manera equitativa */
+    justify-content: center; /* Centra los iconos */
     align-items: center;
-    margin-top: 90px;  /* Espacio superior */
-    margin-bottom: 30px;  /* Espacio inferior para separar los íconos del contenido de abajo */
+    margin-top: 40px; /* Aumentamos el espacio superior */
 }
 
-.social-icons i {
-    font-size: 4rem;  /* Tamaño grande de los íconos */
-    color: #000;  /* Color blanco y negro */
-    margin: 0 15px;  /* Margen horizontal entre los íconos (ajústalo según lo necesites) */
-    transition: color 0.3s ease;  /* Efecto suave al cambiar color */
+.card .social-icons i {
+    font-size: 2rem; /* Aumentamos el tamaño de los iconos */
+    color: #000;
+    margin: 0 15px;
+    transition: color 0.3s ease;
 }
 
-.social-icons i:hover {
-    color: #e29d07;  /* Color al pasar el mouse */
+/* Efecto al pasar el mouse sobre los iconos */
+.card .social-icons i:hover {
+    color: #e29d07;
 }
-
