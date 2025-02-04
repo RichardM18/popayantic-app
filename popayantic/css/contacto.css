@@ -1,65 +1,70 @@
-
-.btn_turismo {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Elimina bordes */
-    padding: 0; /* Elimina padding */
-    cursor: pointer; /* Cambia el cursor a mano al pasar por el botón */
-    display: inline-block; /* Asegura que el botón sea inline */
-    width: 200px; /* Ancho del botón ajustado */
-    height: auto; /* Altura automática para mantener proporción */
-    text-align: center; /* Centra el contenido */
-}
-
-.btn_turismo a {
-    text-decoration: none; /* Elimina subrayado del enlace */
-}
-
-.btn_turismo img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
-    height: auto; /* Mantiene proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    display: block; /* Elimina espacio blanco debajo de la imagen */
-}
-
-
-.btn_cine {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
-    overflow: hidden; /* Asegurar que el contenido se mantenga dentro */
-    display: inline-block;
-    text-align: center;
-}
-
-.btn_cine img {
-    width: 100%; /* Imagen ajustada al contenedor */
+body, html {
+    margin: 0;
+    padding: 0;
     height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    font-family: 'Istok Web', sans-serif;  /* Se aplica la fuente en el body */
+    flex-direction: column; 
+    position: center;
 }
 
-.btn_cine:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+.card {
+    width: 40vw;  /* Utilizamos un valor en vw para que el card ocupe un 60% del ancho de la pantalla */
+    height: 70vh; /* Ajustamos la altura también en vh (view height) para un diseño más adaptable */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinea el contenido desde la parte superior */
+    align-items: center;
+    border: 2px solid #ddd; /* Un borde sutil */
 }
 
-.btn_fup {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
-    overflow: hidden;
-    display: inline-block;
-    text-align: center;
+
+.card h1 {
+    font-size: 2.5em;
+    margin: 0;  /* Elimina el margen entre los dos h1 */
+    text-align: center;  /* Centra el texto */
+    font-weight: bold;   /* Hace el texto en negrita */
 }
 
-.btn_fup img {
-    width: 100%; /* Imagen ajustada al contenedor */
-    height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+p {
+    font-size: 1em;
+    color: #0c0000;
+    margin: 10px;  /* Elimina el margen */
 }
 
-.btn_fup:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+
+.div-p {
+    margin-top: 40px;  
+    text-align: center;  /* Centra el contenido dentro del div */
 }
+
+
+/* ICONOS RED SOCIAL */
+
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;  /* Distribuye los íconos de manera equitativa */
+    align-items: center;
+    margin-top: 90px;  /* Espacio superior */
+    margin-bottom: 30px;  /* Espacio inferior para separar los íconos del contenido de abajo */
+}
+
+.social-icons i {
+    font-size: 4rem;  /* Tamaño grande de los íconos */
+    color: #000;  /* Color blanco y negro */
+    margin: 0 15px;  /* Margen horizontal entre los íconos (ajústalo según lo necesites) */
+    transition: color 0.3s ease;  /* Efecto suave al cambiar color */
+}
+
+.social-icons i:hover {
+    color: #e29d07;  /* Color al pasar el mouse */
+}
+

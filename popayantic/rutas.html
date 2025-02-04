@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visita nuestras Rutas Turísticas</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/rutas.css"> <!-- Estilos específicos para la página de rutas -->
+    <link rel="stylesheet" href="css/rutas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <br>
-    <!-- Encabezado y Menú de navegación -->
+    <br>
+    <br>
     <header>
         <h1></h1>
         <nav class="floating-menu2">
             <ul>
-                <li><a href="index.html"><img src="img/popayan_viaje.png" alt="Inicio" class="inicio-icon"></a></li>
+                <li><a href="index.html"><img src="img/logo_color.png" alt="Inicio" class="inicio-icon"></a></li>
                 <li><a href="rutas.html">RUTAS TURÍSTICAS</a></li>
                 <li><a href="cortometrajes.html">CORTOMETRAJES</a></li>
                 <li><a href="calendario.html">CALENDARIO DE ACTIVIDADES</a></li>
@@ -25,146 +27,183 @@
         </nav>
     </header>
 
-    <!-- Sección Introductoria -->
-    <main>
-        <section class="text-intro">
+
+    <div class="main-container">
+        <main>
+            <section class="text-intro">
+                <h2>¡Visita nuestras rutas turísticas!</h2>
+                <p>Explora la riqueza cultural, histórica y natural de Popayán con nuestras rutas guiadas por los
+                    lugares
+                    más emblemáticos de la región.</p>
+            </section>
+
+            <section id="map-section">
+                <h3>Explora nuestras rutas en el mapa</h3>
+                <div id="map"></div>
+            </section>
             <br>
-            <h2>¡Visita nuestras rutas turísticas!</h2>
-            <p>Explora la riqueza cultural, histórica y natural de Popayán con nuestras rutas guiadas por los lugares
-                más emblemáticos de la región.</p>
-        </section>
+            <br>
+            <br>
 
-        <!-- Mapa de Google Maps -->
-        <section id="map-section">
-            <h3>Explora nuestras rutas en el mapa</h3>
-            <div id="map"></div>
-        </section>
-        <br>
-        <br />
-
-        <!-- Tarjetas de Rutas Turísticas -->
-
-        <section class="rutas">
-            <!-- Ruta 1 -->
-            <div class="ruta">
-                <img src="img/Mmosquera.jpg" alt="Ruta Histórica" class="img-fondo-ruta">
-                <h3>Ruta Histórica</h3>
-                <p>Visita los lugares históricos más importantes de la ciudad.</p>
-                <ul>
-                    <li>Plaza Mayor</li>
-                    <li>Catedral Basílica</li>
-                    <li>Casa Museo Mosquera</li>
-                </ul>
-                <a href="https://maps.app.goo.gl/YZL319DPBPUnDa9a7" class="btn-maps" target="_blank">Revisala en Google
-                    Maps</a>
-                <h4>Agencias de rutas turisticas:</h4>
-                <div class="contenedor-logo-emp">
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
+            <section class="Rutas">
+                <div class="wrapper">
+                    <!-- Tarjeta 1 -->
+                    <div class="card has-bg-img bg-img-popayan">
+                        <div class="card__content">
+                            <span class="card__title">1. Nombre de la ruta</span>
+                            <ul class="card__list">
+                                <li>Lugar 1</li>
+                                <li>Lugar 2</li>
+                                <li>Lugar 3</li>
+                                <li>Lugar 4</li>
+                            </ul>
+                            <div class="logos-container">
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 1" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 2" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 3" class="logo-circle">
+                                </a>
+                            </div>
+                            <!-- Botón con imagen -->
+                            <div class="button-container">
+                                <button class="revisalen-btn-1">
+                                    <span>Revísala en</span>
+                                    <img src="img/maps.png" alt="Icono" class="button-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 2 -->
+                    <div class="card has-bg-img bg-img-popayan">
+                        <div class="card__content">
+                            <span class="card__title">2. Nombre de la ruta</span>
+                            <ul class="card__list">
+                                <li>Lugar 1</li>
+                                <li>Lugar 2</li>
+                                <li>Lugar 3</li>
+                                <li>Lugar 4</li>
+                            </ul>
+                            <div class="logos-container">
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 1" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 2" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 3" class="logo-circle">
+                                </a>
+                            </div>
+                            <!-- Botón con imagen -->
+                            <div class="button-container">
+                                <button class="revisalen-btn-2">
+                                    <span>Revísala en</span>
+                                    <img src="img/maps.png" alt="Icono" class="button-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 3 -->
+                    <div class="card has-bg-img bg-img-nature">
+                        <div class="card__content">
+                            <span class="card__title">3. Nombre de la ruta</span>
+                            <ul class="card__list">
+                                <li>Lugar 1</li>
+                                <li>Lugar 2</li>
+                                <li>Lugar 3</li>
+                                <li>Lugar 4</li>
+                            </ul>
+                            <div class="logos-container">
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 1" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 2" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 3" class="logo-circle">
+                                </a>
+                            </div>
+                            <!-- Botón con imagen -->
+                            <div class="button-container">
+                                <button class="revisalen-btn-3">
+                                    <span>Revísala en</span>
+                                    <img src="img/maps.png" alt="Icono" class="button-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tarjeta 4 -->
+                    <div class="card has-bg-img bg-img-nature">
+                        <div class="card__content">
+                            <span class="card__title">4. Nombre de la ruta</span>
+                            <ul class="card__list">
+                                <li>Lugar 1</li>
+                                <li>Lugar 2</li>
+                                <li>Lugar 3</li>
+                                <li>Lugar 4</li>
+                            </ul>
+                            <div class="logos-container">
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 1" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 2" class="logo-circle">
+                                </a>
+                                <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank">
+                                    <img src="img/logoempresa.png" alt="Logo 3" class="logo-circle">
+                                </a>
+                            </div>
+                            <!-- Botón con imagen -->
+                            <div class="button-container">
+                                <button class="revisalen-btn-4">
+                                    <span>Revísala en</span>
+                                    <img src="img/maps.png" alt="Icono" class="button-icon">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Ruta 2 -->
-            <div class="ruta">
-                <img src="img/GastronomiaPop.jpg" alt="Ruta Gastronómica" class="img-fondo-ruta">
-                <h3>Ruta Gastronómica</h3>
-                <p>Descubre la riqueza culinaria de Popayán.</p>
-                <ul>
-                    <li>Mercado de Bolívar</li>
-                    <li>Restaurantes tradicionales</li>
-                    <li>Taller de cocina regional</li>
-                </ul>
-                <a href="https://maps.app.goo.gl/YZL319DPBPUnDa9a7" class="btn-maps" target="_blank">Revisala en Google
-                    Maps</a>
-                <h4>Agencias de rutas turisticas:</h4>
-                <div class="contenedor-logo-emp">
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                </div>
-            </div>
-
-
-            <!-- Ruta 3 -->
-            <div class="ruta">
-                <img src="img/ReservaCofre.jpg" alt="Ruta Natural" class="img-fondo-ruta">
-                <h3>Ruta Natural</h3>
-                <p>Explora la naturaleza que rodea nuestra ciudad.</p>
-                <ul>
-                    <li>Reserva Natural El Cofre</li>
-                    <li>Río Molino</li>
-                    <li>Laguna del Buey</li>
-                </ul>
-                <a href="https://maps.app.goo.gl/YZL319DPBPUnDa9a7" class="btn-maps" target="_blank">Revisala en Google
-                    Maps</a>
-                <h4>Agencias de rutas turisticas:</h4>
-                <div class="contenedor-logo-emp">
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="https://www.viajesexito.com/nuestras-agencias/popayan" target="_blank"><img
-                            src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                </div>
-            </div>
-
-            <!-- Ruta 4 -->
-            <div class="ruta">
-                <img src="img/culturaPop.jpg" alt="Ruta Cultural" class="img-fondo-ruta">
-                <h3>Ruta Cultural</h3>
-                <p>Conoce la cultura viva de nuestra Popayán.</p>
-                <ul>
-                    <li>Teatro Municipal</li>
-                    <li>Museo de Historia</li>
-                    <li>Eventos culturales</li>
-                </ul>
-                <a href="https://maps.app.goo.gl/YZL319DPBPUnDa9a7" class="btn-maps" target="_blank">Revisala en Google
-                    Maps</a>
-                <h4>Agencias de rutas turisticas:</h4>
-                <div class="contenedor-logo-emp">
-                    <a href="#"><img src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="#"><img src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                    <a href="#"><img src="img/logoempresa.png" alt="Agencia" class="logo-agencia"></a>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Pie de Página -->
-    <br><br><br><br><br><br>
-    <div>
-        <footer>
-            <div class="footer-buttons">
-                <button class="btn_turismo">
-                    <a href="https://www.popayan.gov.co/SecretariasyEntidades/SecCulturaTurismo/Paginas" target="_blank">
-                    <img src="https://www.popayan.gov.co/SecretariasyEntidades/Turismo/PublishingImages/Paginas/Marca-Popayan/Marca%20Popayan%202024.png" alt="" /></a>
-                </button>
-                <button class="btn_cine">
-                    <a href="https://cinecultivo.com" target="_blank">
-                    <img src="https://cinecultivo.com/img/logo/negro%20sobre%20blanco%20o%20color.png" alt="" /></a>   
-                </button>
-                <button class="btn_fup">
-                    <a href="https://fup.edu.co" target="_blank">
-                    <img src="https://fup.edu.co/wp-content/uploads/Logo-FUP-2018-Isotipo-01-300x300-1.png" alt="" /></a>   
-                </button>
-                <button>
-                    <a href="contacto.html">Acerca dé</a>
-                </button>
-            </div>
-        </footer>
+            </section>
+        </main>
     </div>
-    <!-- Scripts -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqFmu3QdBl0lqv1JFSPMy6anGF7fnNJU&callback=initMap"
-        async defer></script>
-    <script src="js/map.js"></script>
+
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="img/logo_color.png" alt="Logo de color Popayán">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.popayan.gov.co/" target="_blank">
+                    <img src="img/logopopayan.png" alt="Logo alcaldía de Popayán">
+                </a>
+                <a href="https://cinecultivo.com" target="_blank">
+                    <img src="img/logo_cinecultivo.png" alt="CineCultivo">
+                </a>
+                <a class="logo_fup" href="https://fup.edu.co" target="_blank">
+                    <img src="img/logo_fup.png" alt="Logo FUP">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
+
+
+
+
+<!-- Scripts -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqFmu3QdBl0lqv1JFSPMy6anGF7fnNJU&callback=initMap" async
+    defer></script>
+<script src="js/map.js"></script>
 
 </html>
