@@ -1,21 +1,217 @@
-/* Parte superior */
+/* Estilos generales de la pag */
 
-header {
-    position: fixed;
+body {
+    font-family: 'Istok Web', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    position: relative;
+}
+
+
+/* Estilos Cards
+
+/* Not important. General styling
+------------------------------------------ */
+.wrapper{ display: flex; flex-flow: row; flex-wrap: wrap; justify-content: center; }
+.wrapper > *{ margin: 0 1rem 2rem; }
+
+/**************************************************
+** CARDS STYLING 
+***************************************************/
+/* Card outside box. Here is where the 
+** dimensions, shadows and borders are set 
+------------------------------------------ */
+.card{
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  
+  width: 320px; /* Box dimensions */
+  height: 430px; 
+  
+  border-radius: 4px; /* Styling */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);  
+  transition: box-shadow 0.56s ease-in-out; /* Animation */
+  /* background-color: rgba(0,0,0,.2); /* for debugging */
+}
+/* Shows an outer shadow */
+.card:hover{ /* Just for styling */
+  cursor: pointer;
+  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.2);
+}
+
+/* Cards titles styling
+------------------------------------------ */
+
+
+/* Styles for:
+** - Using IMG tag inside a container
+------------------------------------------ */
+/* The image container */
+.card__thumbnail{
+  position: relative;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center; /* vertical center */
+  
+  width: 100%; /* Thumbnail dimensions. */
+  height: 100%; /*** Change the height to make the image smaller ***/
+  /* background-color: rgba(0,0,0,.2);  /* for debugging */
+  
+}
+/* Sets the image dimensions */
+.card__thumbnail > img{ /* Tip: use 1:1 ratio images */
+  height: 100%; /* or width when img.width > img.height */ 
+}  
+/* Styles the title inside the img container */
+.card__thumbnail > .card__title{ /* Just for styling */
+  position: absolute; left: 0; bottom: 0; }
+
+
+/* Styles for:
+** - Using background-size on CSS
+** - Using background-size on HTML
+** - Using background-size on JS
+------------------------------------------ */
+/* Prepares a container to have cover background */
+.has-bg-img{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+}
+/* Loads a specific image to a container */
+.bg-img-nature{
+  background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
+
+.bg-img-popayan{
+    background-image: url(/popayantic/img/iglesia.jpg);
+}
+
+
+
+.card__content {
+    position: initial  ;
+    bottom: 10px;
+    left: 10px;
+    background:  rgba(2, 0, 0, 0.479);;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
     width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #ffffff; /* Fondo blanco para el menú */
-    z-index: 10; /* Asegura que el menú esté por encima del contenido */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
 }
 
-.text-intro{
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
+.card__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
+.card__list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 0.8rem; /* Puedes ajustar este valor a tu gusto para hacer la letra más pequeña */
+}
+ 
+.card__list li {
+    
+    padding: 7px; /* Aumenta el relleno interno */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+/* Contenedor de logos debajo de los items */
+.logos-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; /* Separación de los ítems */
+}
+
+/* Estilos para los logos en forma de círculo */
+.logo-circle {
+    width: 80px; /* Tamaño del logo */
+    height: 80px; 
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+   
+}
+
+
+/* Contenedor del botón */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón */
+    margin-top: 20px;
+}
+
+/* Estilo del botón */
+.revisalen-btn-1,
+.revisalen-btn-2,
+.revisalen-btn-3,
+.revisalen-btn-4 {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+/*Color del botón 1*/
+.revisalen-btn-1{
+    background-color: #EFB832; /* Puedes cambiar el color */
+    color: #000000;
+}
+/*Color del botón 2*/
+.revisalen-btn-2{
+    background-color: #1C9838; /* Puedes cambiar el color */
+    color: #fff;
+}
+/*Color del botón 3*/
+.revisalen-btn-3{
+    background-color: #96492A; /* Puedes cambiar el color */
+    color: #fff;
+}
+/*Color del botón 4*/
+.revisalen-btn-4{
+    background-color: #D80D7E; /* Puedes cambiar el color */
+    color: #fff;
+}
+
+
+/* Estilo del icono dentro del botón */
+.revisalen-btn-1 .button-icon,
+.revisalen-btn-2 .button-icon,
+.revisalen-btn-3 .button-icon,
+.revisalen-btn-4 .button-icon {
+    width: 40px; /* Ajusta el tamaño del icono */
+    height: auto;
+    margin-left: 10px; /* Espacio entre el texto y el icono */
+}
+
+.revisalen-btn-1:hover {
+    background-color: #C09528; /* Cambia el color cuando se pase el mouse */
+}
+
+.revisalen-btn-2:hover {
+    background-color: #146E29; /* Cambia el color cuando se pase el mouse */
+}
+
+.revisalen-btn-3:hover {
+    background-color: #6C341E; /* Cambia el color cuando se pase el mouse */
+}
+
+.revisalen-btn-4:hover {
+    background-color: #960956; /* Cambia el color cuando se pase el mouse */
+}
 
 
 /* Sección del mapa */
@@ -134,69 +330,56 @@ ul li {
     background-color: #0056b3; /* Cambia el color al pasar el mouse */
 }
 
-/* Botones footer*/
-
-.btn_turismo {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Elimina bordes */
-    padding: 0; /* Elimina padding */
-    cursor: pointer; /* Cambia el cursor a mano al pasar por el botón */
-    display: inline-block; /* Asegura que el botón sea inline */
-    width: 200px; /* Ancho del botón ajustado */
-    height: auto; /* Altura automática para mantener proporción */
-    text-align: center; /* Centra el contenido */
+/* Sección principal */
+main {
+    padding: 20px;
 }
 
-.btn_turismo a {
-    text-decoration: none; /* Elimina subrayado del enlace */
+.intro {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.btn_turismo img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
-    height: auto; /* Mantiene proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    display: block; /* Elimina espacio blanco debajo de la imagen */
+.rutas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ruta {
+    background-color: #2d344b;
+    color: #fff;
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.ruta h3 {
+    margin-top: 0;
+}
+
+.ruta ul {
+    padding-left: 20px;
 }
 
 
-.btn_cine {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
-    overflow: hidden; /* Asegurar que el contenido se mantenga dentro */
-    display: inline-block;
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Fondo blanco para el menú */
+    z-index: 10; /* Asegura que el menú esté por encima del contenido */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destacar el menú */
+}
+
+.text-intro{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-}
-
-.btn_cine img {
-    width: 100%; /* Imagen ajustada al contenedor */
-    height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
-}
-
-.btn_cine:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
-}
-
-.btn_fup {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
-    overflow: hidden;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn_fup img {
-    width: 100%; /* Imagen ajustada al contenedor */
-    height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
-}
-
-.btn_fup:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
 }

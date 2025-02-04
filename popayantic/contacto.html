@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Card Fullscreen</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <!-- el menu de navegación flotante con bordes -->
+        <h1></h1>
         <nav class="floating-menu2">
             <ul>
-                <li><a href="index.html"><img src="img/popayan_viaje.png" alt="Inicio" class="inicio-icon"></a></li>
+                <li><a href="index.html"><img src="img/logo_color.png" alt="Inicio" class="inicio-icon"></a></li>
                 <li><a href="rutas.html">RUTAS TURÍSTICAS</a></li>
                 <li><a href="cortometrajes.html">CORTOMETRAJES</a></li>
                 <li><a href="calendario.html">CALENDARIO DE ACTIVIDADES</a></li>
@@ -21,23 +24,51 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <h1>Contacto</h1>
-        <p>Puedes comunicarte con la Secretaría de Turismo en:</p>
-        <p>Dirección: Carrera 5 No. 5-18 Centro Histórico, Popayán, Cauca</p>
-        <p>Teléfono: 28294727 ext. 220</p>
-        <p>Email: turismo@popayan.gov.co</p>
-    </main>
+
+    <br>
+    <br>
+
+    <div class="card">
+        <h1>SECRETARIA DE CULTURA</h1>
+        <h1>OFICINA DE TURISMO POPAYÁN</h1>
+        <div class="div-p">
+            <p>Dirección: Carrera 5 No. 5-18 Centro histórico, Popayán, Cauca</p>
+            <p>Teléfono: 28294727 ext. 220 </p>
+            <p>E-mail: turismo@popayan.gov.co</p>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone-alt"></i>
+        </div>
+    </div>
+
+
+
+    <!-- Texto debajo del card -->
+    <div class="div-p">
+        <p>Bienvenido a Popayán un viaje por el tiempo</p>
+    </div>
+
     <footer>
-        <p>Secretaría de Cultura | Oficina de Turismo Popayán</p>
-        <p>Dirección: Carrera 5 No. 5-18 Centro Histórico, Popayán</p>
-        <p>Teléfono: 28294727 ext. 220 | E-mail: turismo@popayan.gov.co</p>
-        <div class="footer-buttons">
-            <button><a href="https://www.popayan.gov.co/SecretariasyEntidades/SecCulturaTurismo/Paginas" target="_blank">
-                Secretaría de turismo</a></button>
-            <button><a href="https://www.popayan.gov.co/" target="_blank">Alcaldía de Popayán</a></button>
-            <button><a href="https://fup.edu.co/" target="_blank">Fundacion Universitaria de Popayán</a></button>
-            <button><a href="contacto.html">Acerca dé</a></button>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <a href="index.html">
+                    <img src="img/logo_color.png" alt="Logo de color Popayán">
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="https://www.popayan.gov.co/" target="_blank">
+                    <img src="img/logopopayan.png" alt="Logo alcaldía de Popayán">
+                </a>
+                <a href="https://cinecultivo.com" target="_blank">
+                    <img src="img/logo_cinecultivo.png" alt="CineCultivo">
+                </a>
+                <a class="logo_fup" href="https://fup.edu.co" target="_blank">
+                    <img src="img/logo_fup.png" alt="Logo FUP">
+                </a>
+            </div>
         </div>
     </footer>
 </body>

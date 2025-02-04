@@ -1,6 +1,6 @@
 .explorar-rutas {
     background-color: #EFB832;
-    color: black; /* Cambia esto según el color del texto que prefieras */
+    color: black;
 }
 
 .ver-cortometrajes {
@@ -18,7 +18,6 @@
     color: white;
 }
 
-/* Opcional: estilos generales para todos los botones */
 button {
     border: none;
     padding: 10px 20px;
@@ -27,67 +26,146 @@ button {
     border-radius: 5px;
 }
 
-.btn_turismo {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Elimina bordes */
-    padding: 0; /* Elimina padding */
-    cursor: pointer; /* Cambia el cursor a mano al pasar por el botón */
-    display: inline-block; /* Asegura que el botón sea inline */
-    width: 200px; /* Ancho del botón ajustado */
-    height: auto; /* Altura automática para mantener proporción */
-    text-align: center; /* Centra el contenido */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.btn_turismo a {
-    text-decoration: none; /* Elimina subrayado del enlace */
+body {
+    font-family: 'Overpass', sans-serif;
 }
 
-.btn_turismo img {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho del botón */
-    height: auto; /* Mantiene proporción de la imagen */
-    border-radius: 5px; /* Bordes redondeados opcionales */
-    display: block; /* Elimina espacio blanco debajo de la imagen */
+/* Estilo de texto para la info al lado de las imagenes */
+.texto-side {
+    font-size: 25px;
+    line-height: 1.5;
 }
 
 
-.btn_cine {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
-    overflow: hidden; /* Asegurar que el contenido se mantenga dentro */
-    display: inline-block;
-    text-align: center;
-}
-
-.btn_cine img {
-    width: 100%; /* Imagen ajustada al contenedor */
-    height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
-}
-
-.btn_cine:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
-}
-
-.btn_fup {
-    width: 100px; /* Tamaño cuadrado */
-    height: 100px;
+/* Imagen grande introductoria */
+.intro-section {
+    position: relative;
+    width: 100%;
+    height: 700px;
     overflow: hidden;
-    display: inline-block;
-    text-align: center;
 }
 
-.btn_fup img {
-    width: 100%; /* Imagen ajustada al contenedor */
+.intro-image {
+    width: 100%;
     height: 100%;
-    object-fit: cover; /* Mantener proporción y recortar si es necesario */
-    border-radius: 10px; /* Bordes redondeados opcionales */
-    transition: filter 0.3s ease, transform 0.3s ease; /* Efecto al pasar el cursor */
+    object-fit: cover;
 }
 
-.btn_fup:hover img {
-    filter: brightness(0.8); /* Oscurece ligeramente al pasar el cursor */
-    transform: scale(1.05); /* Escala un poco al pasar el cursor */
+/* Texto en imagen introductoria */
+.overlay-text-intro {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.395);
+    padding: 20px 30px;
+    border-radius: 90px;
+    max-width: 900px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 1.4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.062);
 }
+
+/* Sección de contenido con imagen a la izquierda */
+.content-section {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.content-left {
+    flex: 1;
+}
+
+.side-image {
+    width: 100%;
+    max-width: 4000px;
+    border-radius: 10px;
+}
+
+.content-right {
+    flex: 1;
+    padding: 0 30px;
+}
+
+/*Imágenes*/
+.iglesia-img {
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imagen-historia {
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Botones centrados */
+.center-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.center-buttons button {
+    font-size: 20px;
+    border: none;
+    padding: 20px 30px;
+    margin: 0 60px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.center-buttons button:hover {
+    background-color: #3b3b3b;
+}
+
+/* Invertido: Imagen a la derecha y texto a la izquierda */
+.inverted .content-left {
+    order: 1;
+}
+
+.inverted .content-right {
+    order: 1;
+}
+
+/* Imagen grande en todo el ancho de la pantalla con texto sobre ella */
+.full-width-image-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay-text h2 {
+    margin: 0;
+}
+
