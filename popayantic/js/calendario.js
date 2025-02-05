@@ -175,3 +175,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+//Invitación por correo electrónico
+function enviarInvitacion() {
+    let email = prompt("Ingresa el correo del destinatario:");
+
+    if (email) {
+        let subject = encodeURIComponent("Invitación a un evento cultural en Popayán");
+        let body = encodeURIComponent(`Hola,\n\nQueremos invitarte a un evento cultural en la ciudad de Popayán. Será una experiencia llena de arte, música y tradición.\n\n📅 Fecha: [Fecha del evento]\n📍 Lugar: [Lugar del evento]\n⏰ Hora: [Hora del evento]\n\n¡Esperamos contar contigo para celebrar nuestra cultura!\n\nSaludos,\n[Tu nombre o entidad organizadora]`);
+
+        let mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+        window.location.href = mailtoLink;
+    }
+}
