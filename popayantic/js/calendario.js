@@ -6,15 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn.addEventListener("click", () => {
         modal.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal.addEventListener("click", () => {
         modal.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal) {
             modal.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -25,15 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn2.addEventListener("click", () => {
         modal2.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal2.addEventListener("click", () => {
         modal2.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal2) {
             modal2.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -44,15 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn3.addEventListener("click", () => {
         modal3.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal3.addEventListener("click", () => {
         modal3.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal3) {
             modal3.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -63,34 +72,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn4.addEventListener("click", () => {
         modal4.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal4.addEventListener("click", () => {
         modal4.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal4) {
             modal4.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
     // quinto modal
     const modal5 = document.getElementById("modal5");
     const openModalBtn5 = document.getElementById("openModal5");
-    const closeModal5 = document.querySelector("#modal4 .close");
+    const closeModal5 = document.querySelector("#modal5 .close");
 
     openModalBtn5.addEventListener("click", () => {
         modal5.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal5.addEventListener("click", () => {
         modal5.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal5) {
             modal5.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -101,15 +116,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn6.addEventListener("click", () => {
         modal6.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal6.addEventListener("click", () => {
         modal6.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal6) {
             modal6.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -120,15 +138,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn7.addEventListener("click", () => {
         modal7.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal7.addEventListener("click", () => {
         modal7.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal7) {
             modal7.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 
@@ -139,15 +160,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     openModalBtn8.addEventListener("click", () => {
         modal8.classList.add("show");
+        document.body.classList.add("modal-open"); // Bloquea el scroll
     });
 
     closeModal8.addEventListener("click", () => {
         modal8.classList.remove("show");
+        document.body.classList.remove("modal-open"); // Restaura el scroll
     });
 
     window.addEventListener("click", (e) => {
         if (e.target === modal8) {
             modal8.classList.remove("show");
+            document.body.classList.remove("modal-open"); // Restaura el scroll
         }
     });
 });
