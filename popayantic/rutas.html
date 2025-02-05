@@ -7,7 +7,9 @@
     <title>Visita nuestras Rutas Turísticas</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/rutas.css">
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
 </head>
 
 <body>
@@ -46,6 +48,10 @@
 
             <section id="map-section">
                 <h3>Explora nuestras rutas en el mapa</h3>
+
+                <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
                 <div id="map"></div>
             </section>
             <br>
@@ -214,8 +220,7 @@
 
 
 <!-- Scripts -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALqFmu3QdBl0lqv1JFSPMy6anGF7fnNJU&callback=initMap" async
-    defer></script>
-<script src="js/map.js"></script>
+<script src="js/rutas.js"></script>
+
 
 </html>

@@ -1,7 +1,7 @@
 /* Estilos generales de la pag */
 
 body {
-    font-family: 'Istok Web', sans-serif;
+    
 
     margin: 0;
     padding: 0;
@@ -90,7 +90,7 @@ body {
 }
 
 .bg-img-popayan{
-    background-image: url(/img/iglesia.jpg);
+    background-image: url(https://media.istockphoto.com/id/1330248710/es/foto/templo-de-san-francisco-popayán-colombia-marzo-2016.jpg?s=170667a&w=0&k=20&c=7QWfV2lg7DIqvs5pgcKHY7p_m1a6NLnAy5DcqoFMyv4=);
 }
 
 .card__content {
