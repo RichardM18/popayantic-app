@@ -32,6 +32,7 @@
 .btn1 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -47,6 +48,7 @@
 .btn2 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -62,6 +64,7 @@
 .btn3 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -77,6 +80,7 @@
 .btn4 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -92,6 +96,7 @@
 .btn5 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -107,6 +112,7 @@
 .btn6 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -122,6 +128,7 @@
 .btn7 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -137,6 +144,7 @@
 .btn8 {
     margin-top: 10px;
     padding: 10px;
+    margin-bottom: 10px;
     border: none;
     background: rgb(17,76,180);
     color: white;
@@ -173,8 +181,8 @@
     padding: 30px;
     border-radius: 15px;
     text-align: center;
-    width: 800px;
-    max-height: 90vh; /* Altura máxima del modal */
+    width: 600px;
+    max-height: 81vh; /* Altura máxima del modal */
     overflow-y: auto; /* Habilita el scroll dentro del modal */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transform: scale(0.8);
@@ -199,8 +207,9 @@ body.modal-open {
 
 /* Botón de cierre */
 .close {
-    font-size: 24px;
+    font-size: 40px;
     float: right;
+    padding: 4px;
     cursor: pointer;
 } 
 
@@ -237,3 +246,107 @@ body.modal-open {
     line-height: 1.6;  /* Espaciado entre líneas */
 }
 
+
+/* Estilos para la tarjeta */
+.event-card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.event-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-title {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.event-subtitle {
+    font-size: 2em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-top: 0;
+}
+
+.event-description {
+    padding: 20px;
+    color: #555;
+    text-align: justify-center;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+.event-date, .event-location {
+    margin-bottom: 15px;
+}
+
+.event-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.event-date-time, .event-location-info {
+    color: #666;
+}
+
+.event-calendar-link, .event-map-link {
+    color: #007BFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.event-map {
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+}
+
+.event-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-invite {
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+}
+
+
+.btn-invite {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.btn-invite:hover {
+    opacity: 0.8;
+}
+
+.btn-invite i {
+    margin-right: 10px;
+}
