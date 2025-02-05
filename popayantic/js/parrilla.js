@@ -1,7 +1,7 @@
 const capitulos = [
     {
       id: 'cap1',
-      imagen: '/img/miniaturas/cap1_01.png',
+      imagen: 'img/miniaturas/cap1_01.png',
       episodio: '1',
       titulo: 'Ciudad Bohemia',
       sinopsis: 'Sinopsis: Ciudad Bohemia',
@@ -9,7 +9,7 @@ const capitulos = [
     },
     {
       id: 'cap2',
-      imagen: '/img/miniaturas/cap2_01.png',
+      imagen: 'img/miniaturas/cap2_01.png',
       episodio: '2',
       titulo: 'Popayán Construida por Mujeres',
       sinopsis: 'Sinopsis: Popayán Construida por Mujeres',
@@ -17,7 +17,7 @@ const capitulos = [
     },
     {
       id: 'cap3',
-      imagen: '/img/miniaturas/cap3_01.png',
+      imagen: 'img/miniaturas/cap3_01.png',
       episodio: '3',
       titulo: 'Popayán Capital de las Culturas',
       sinopsis: 'Sinopsis: Popayán Capital de las Culturas',
@@ -25,7 +25,7 @@ const capitulos = [
     },
     {
       id: 'cap4',
-      imagen: '/img/miniaturas/cap4_01.png',
+      imagen: 'img/miniaturas/cap4_01.png',
       episodio: '4',
       titulo: 'Gastronomía en Popayán',
       sinopsis: 'Sinopsis: Gastronomía en Popayán',
@@ -33,7 +33,7 @@ const capitulos = [
     },
     {
       id: 'cap5',
-      imagen: '/img/miniaturas/cap5_01.png',
+      imagen: 'img/miniaturas/cap5_01.png',
       episodio: '5',
       titulo: 'El Lenguaje de las Flores',
       sinopsis: 'Sinopsis: El Lenguaje de las Flores',
@@ -41,7 +41,7 @@ const capitulos = [
     },
     {
       id: 'cap6',
-      imagen: '/img/miniaturas/cap6_01.png',
+      imagen: 'img/miniaturas/cap6_01.png',
       episodio: '6',
       titulo: 'Ser Campesino por un Día',
       sinopsis: 'Sinopsis: Ser Campesino por un Día',
@@ -49,7 +49,7 @@ const capitulos = [
     },
     {
       id: 'cap7',
-      imagen: '/img/miniaturas/cap7_01.png',
+      imagen: 'img/miniaturas/cap7_01.png',
       episodio: '7',
       titulo: 'Popayán de Aventura',
       sinopsis: 'Sinopsis: Popayán de Aventura',
@@ -57,7 +57,7 @@ const capitulos = [
     },
     {
       id: 'cap8',
-      imagen: '/img/miniaturas/cap8_01.png',
+      imagen: 'img/miniaturas/cap8_01.png',
       episodio: '8',
       titulo: 'Un Viaje a las Estrellas',
       sinopsis: 'Sinopsis: Un Viaje a las Estrellas',
@@ -65,7 +65,7 @@ const capitulos = [
     },
     {
       id: 'cap9',
-      imagen: '/img/miniaturas/cap9_01.png',
+      imagen: 'img/miniaturas/cap9_01.png',
       episodio: '9',
       titulo: 'Popayán Ciudad de Pasión',
       sinopsis: 'Sinopsis: Popayán Ciudad de Pasión',
@@ -73,7 +73,7 @@ const capitulos = [
     },
     {
       id: 'cap10',
-      imagen: '/img/miniaturas/cap10_01.png',
+      imagen: 'img/miniaturas/cap10_01.png',
       episodio: '10',
       titulo: 'Popayán Ciudad del Amor Eterno',
       sinopsis: 'Sinopsis: Popayán Ciudad del Amor Eterno',
