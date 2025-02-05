@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Istok Web', sans-serif;
+
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -67,7 +68,7 @@ body {
   height: 100%; /* or width when img.width > img.height */ 
 }  
 /* Styles the title inside the img container */
-.card__thumbnail > .card__title{ /* Just for styling */
+.card_thumbnail > .card_title{ /* Just for styling */
   position: absolute; left: 0; bottom: 0; }
 
 
@@ -83,7 +84,7 @@ body {
   background-size: cover;
   
 }
-/* Loads a specific image to a container */
+/* cargar una imagen especifica a las tarjetas */
 .bg-img-nature{
   background-image: url(https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
 }
@@ -91,8 +92,6 @@ body {
 .bg-img-popayan{
     background-image: url(/img/iglesia.jpg);
 }
-
-
 
 .card__content {
     position: initial  ;
@@ -122,7 +121,7 @@ body {
 .card__list li {
     
     padding: 7px; /* Aumenta el relleno interno */
-    border-radius: 15px;
+    border-radius: 5px;
     font-size: 1rem;
 }
 
@@ -156,6 +155,7 @@ body {
 .revisalen-btn-2,
 .revisalen-btn-3,
 .revisalen-btn-4 {
+    text-decoration: none;
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -238,7 +238,7 @@ body {
 
 .ruta-card {
     background-color: #f8f8f8;
-    border-radius: 15px;
+    border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -296,7 +296,7 @@ ul li {
 /* Estilos para las tarjetas de rutas turísticas */
 .ruta {
     background-color: rgb(47, 56, 81); /* Fondo */
-    border-radius: 15px; /* Bordes redondeados */
+    border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(197, 6, 6, 0.1); /* Sombra para un efecto 3D */
     padding: 20px; /* Espaciado interno */
     margin: 20px auto; /* Espaciado externo y centrado */
@@ -308,7 +308,7 @@ ul li {
 .ruta img {
     width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
     height: auto; /* La altura se ajusta automaticamente */
-    border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
     object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
     max-height: 200px; /* Limita la altura de la imagen */
     margin-bottom: 15px; /* Espaciado debajo de la imagen */
@@ -321,7 +321,7 @@ ul li {
     color: white;
     background-color: #007bff;
     padding: 10px 15px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin-top: 15px;
 }
 
@@ -354,7 +354,7 @@ main {
     width: 45%;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 15px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
