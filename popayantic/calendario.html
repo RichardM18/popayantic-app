@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendario de Actividades</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/calendario.css">
 </head>
 
 <body>
@@ -32,12 +32,790 @@
     <main>
         <section class="intro">
             <br>
-            <h2 style="text-align: center;">¡Visita nuestras rutas turísticas!</h2>
+            <h1>¡CONOCE NUESTRO CALENDARIO DE ACTIVIDADES!</h1>
             <p>Explora la riqueza cultural, histórica y natural de Popayán con nuestras rutas guiadas por los lugares
                 más emblemáticos de la región.</p>
         </section>
     </main>
-    
+    <div class="container">
+        <!-- Tarjeta -->
+
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        1 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Semana Santa
+                </h2>
+                <button class="" id="openModal">Más información</button>
+            </div>
+            <!-- Modal 1 -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        2 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal2">Más información</button>
+            </div>
+            <!-- Modal 2 -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        3 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal3">Más información</button>
+            </div>
+            <!-- Modal 3 -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        4 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal4">Más información</button>
+            </div>
+            <!-- Modal 4 -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        5 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal5">Más información</button>
+            </div>
+            <!-- Modal 5 -->
+            <div id="modal5" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        6 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal6">Más información</button>
+            </div>
+            <!-- Modal 6 -->
+            <div id="modal6" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 7 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        7 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal7">Más información</button>
+            </div>
+            <!-- Modal 7 -->
+            <div id="modal7" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 8 -->
+        <div class="card">
+            <img alt="Discovery Rooms" class="w-full" height="200"
+                src="https://www.fmm.org.co/public/img/noticias/10k-5k-semana-santa-FMM.jpg" width="300" />
+            <div class="p-4">
+                <div class="flex justify-between items-center">
+                    <span class="text-2xl font-bold">
+                        8 ene
+                    </span>
+                </div>
+                <h2 class="text-lg font-bold mt-2">
+                    Carrera 10k
+                </h2>
+                <button id="openModal8">Más información</button>
+            </div>
+            <!-- Modal 8 -->
+            <div id="modal8" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+
+                    <div class="bg-gray-100">
+                        <!-- Header -->
+                        <header class="bg-blue-600 text-white text-center py-4">
+                            <h1 class="text-3xl font-bold">Semana Santa</h1>
+                            <p class="text-sm">Explora el universo a través de nuestras charlas y eventos</p>
+                        </header>
+
+                        <!-- Contenido Principal -->
+                        <div class="max-w-screen-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden mt-10">
+                            <!-- Información del Evento -->
+                            <div class="p-4 border-b">
+                                <h2 class="text-center text-gray-500 text-sm">Semana Santa</h2>
+                                <h1 class="text-center text-2xl font-bold mt-2">Astronomía en Vivo: Historia del
+                                    Universo
+                                </h1>
+                            </div>
+
+                            <img alt="A beautiful image of a nebula in space" class="w-full" height="400"
+                                src="https://especiales.semana.com/especiales/patrimonios-colombia-humanidad/images/semana-santa-1.jpg"
+                                width="600" />
+
+                            <div class="p-6">
+                                <h3 class="text-lg font-semibold">Room 23</h3>
+                                <p class="text-gray-700 mt-2">
+                                    In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat
+                                    aliquam.
+                                    Integer et elit eget elit facilisis tristique.
+                                    Nam vel iaculis mauris. Sed ullamcorper tellus erat, non ultrices sem tincidunt
+                                    euismod.
+                                </p>
+                                <p class="text-blue-500 mt-2 cursor-pointer">Mostrar más</p>
+
+                                <!-- Detalles del Evento -->
+                                <div class="mt-4">
+                                    <div class="flex items-center mb-2">
+                                        <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">CUANDO</p>
+                                            <p class="text-gray-700">Miércoles, 13 marzo 07:00</p>
+                                            <p class="text-blue-500 cursor-pointer">Añadir al calendario</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                                        <div>
+                                            <p class="text-gray-700 font-semibold">DÓNDE</p>
+                                            <p class="text-gray-700">321 Broad Ave, Los Angeles, CA 90017, USA</p>
+                                            <p class="text-blue-500 cursor-pointer">Obtener indicaciones</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Mapa -->
+                            <div class="p-6">
+                                <img alt="Map showing the location of the event" class="w-full" height="300"
+                                    src="https://storage.googleapis.com/a1aa/image/-hqNjzzKwGmbMe7PTSstd2omFSneqHJ1VORtLYEsgkQ.jpg"
+                                    width="600" />
+                            </div>
+
+                            <!-- Botones de Acción -->
+                            <div class="p-6 border-t">
+                                <div class="flex justify-between">
+                                    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-share-alt mr-2"></i> COMPARTIR
+                                    </button>
+                                    <button class="bg-gray-200 text-gray-700 px-4 py-2 rounded-lg flex items-center">
+                                        <i class="fas fa-envelope mr-2"></i> INVITAR POR CORREO ELECTRÓNICO
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
@@ -59,5 +837,9 @@
         </div>
     </footer>
 </body>
+
+<!-- Script -->
+<script src="js/calendario.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
 </html>

@@ -5,171 +5,175 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Página de Turismo</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/capitulos.css">
     
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/capitulos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- el menu de navegación flotante con bordes -->
-    <nav class="floating-menu2">
-        <!-- Contenedor del icono de hamburguesa y la imagen -->
-        <div class="hamburger-container">
-            <img src="img/logo_color.png" alt="Inicio" class="inicio-icon">
-            <span class="hamburger-icon">&#9776;</span>
-        </div>
-
-        <!-- Lista de menú -->
-        <ul>
-            <li><a href="index.html">INICIO</a></li>
-            <li><a href="rutas.html">RUTAS TURÍSTICAS</a></li>
-            <li><a href="calendario.html">CALENDARIO DE ACTIVIDADES</a></li>
-            <li><a href="contacto.html">ACERCA DE</a></li>
-        </ul>
-    </nav>
-
-    <!-- Sección de los cortometrajes (movida al inicio) -->
-<div class="parrilla--section__main">
-    <div class="header__menu--logo-popayan">
-        <img src="img/logo_color.png" alt="">
-    </div>
-    <div class="section__main-content">
-        
-
-        <!-- Contenido central -->
-        <div class="section__main--center">
-            <div class="texto-inicial">
-                <p>
-                    Sigue en cada capítulo las aventuras de estos viajeros
-                </p>
-            </div>
+        <div class="container-wrapper">
+            <header>
+                <!-- el menu de navegación flotante con bordes -->
+                <nav class="floating-menu2">
+                    <!-- Contenedor del icono de hamburguesa y la imagen -->
+                    <div class="hamburger-container">
+                        <img src="img/logo_color.png" alt="Inicio" class="inicio-icon"> <!-- Asegúrate de que el archivo esté en la ruta correcta -->
+                        <span class="hamburger-icon">&#9776;</span> <!-- Icono de hamburguesa -->
+                    </div>
             
-            <div class="capitulos">
-                <!-- fn js -->
+                    <!-- Lista de menú -->
+                    <ul>
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="rutas.html">RUTAS TURÍSTICAS</a></li>
+                        <li><a href="calendario.html">CALENDARIO DE ACTIVIDADES</a></li>
+                        <li><a href="contacto.html">ACERCA DE</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Sección de los cortometrajes (movida al inicio) -->
+        <div class="parrilla--section__main">
+            <div class="header__menu--logo-popayan">
+                <img src="img/logo_color.png" alt="">
             </div>
-            <nav>
-                <ul class="submenu-capitulos">
-                    <!-- fn js -->
-                </ul>
-            </nav>
-    
-            <div class="texto-final">
-                <p>
-                    Visita Popayán y vive un viaje en el tiempo
-                </p>
+            <div class="section__main-content">
+                
+
+                <!-- Contenido central -->
+                <div class="section__main--center">
+                    <div class="texto-inicial">
+                        <p>
+                            Sigue en cada capítulo las aventuras de estos viajeros
+                        </p>
+                    </div>
+                    
+                    <div class="capitulos">
+                        <!-- fn js -->
+                    </div>
+                    <nav>
+                        <ul class="submenu-capitulos">
+                            <!-- fn js -->
+                        </ul>
+                    </nav>
+            
+                    <div class="texto-final">
+                        <p>
+                            Visita Popayán y vive un viaje en el tiempo
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        
+        <!-- Imagen grande introductoria detrás del menú-->
+        <section class="intro-section">
+            <img src="img/imageninicio.png" alt="Imagen de Bienvenida" class="intro-image">
+            <div class="overlay-text-intro">
+                <div class="texto-side">
+                    <h2>¡Te damos la bienvenida a Popayán!</h2>
+                    <p>
+                        Descubre Popayán, la Ciudad Blanca de Colombia, donde la historia, la
+                        cultura y la belleza natural se unen. ¡Popayán te espera con experiencias
+                        únicas que no querrás perderte!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Imagen a la izquierda y texto a la derecha -->
+        <section class="content-section">
+            <div class="content-left">
+                <img src="img/iglesia.jpg" alt="Imagen Izquierda" class="side-image">
+            </div>
+            <div class="content-right">
+                <div class="texto-side">
+                    <h2>¿Por qué deberías visitar Popayán?</h2>
+                    <p style="text-align: justify;">
+                        Visitar Popayán es descubrir una ciudad donde la historia y la cultura brillan en cada rincón. La
+                        Ciudad
+                        Blanca te invita a recorrer su arquitectura colonial, disfrutar de sus festividades y saborear su
+                        deliciosa gastronomía. Cada visita a Popayán te ofrece una experiencia única y memorable.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Dos botones centrados debajo del punto 4 (imagen la iglesia) -->
+        <section class="center-buttons">
+            <button class="explorar-rutas" onclick="location.href='rutas.html'">Explorar Rutas</button>
+            <button class="calendario-eventos" onclick="location.href='calendario.html'">Calendario de Eventos</button>
+        </section>
+
+        <!-- Imagen a la derecha y texto a la izquierda (con nuevas clases) -->
+<section class="history-section">
+    <div class="history-text">
+        <div class="history-content">
+            <h2>Un poco de nuestra historia</h2>
+            <p>
+                Fundada en 1537, Popayán es una de las ciudades más antiguas de Colombia, conocida por su 
+                arquitectura colonial y su papel central en la historia del país. A lo largo de los siglos, ha sido un 
+                importante centro político, religioso y cultural.
+            </p>
+        </div>
     </div>
-</div>
+    <div class="history-image">
+        <img src="img/imagenhistoria.jpg" alt="Imagen de la Historia" class="history-img">
+    </div>
+</section>
 
-    <!-- Imagen grande introductoria detrás del menú-->
-    <section class="intro-section">
-        <img src="img/imageninicio.png" alt="Imagen de Bienvenida" class="intro-image">
-        <div class="overlay-text-intro">
-            <div class="texto-side">
-                <h2>¡Te damos la bienvenida a Popayán!</h2>
-                <p>
-                    Descubre Popayán, la Ciudad Blanca de Colombia, donde la historia, la
-                    cultura y la belleza natural se unen. ¡Popayán te espera con experiencias
-                    únicas que no querrás perderte!
-                </p>
+
+        <!-- Otros dos botones centrados debajo del punto 6 (imagen de la historia) -->
+        <section class="center-buttons">
+            <button class="ver-cortometrajes" onclick="location.href='cortometrajes.html'">Ver Cortometrajes</button>
+            <button class="contacto" onclick="location.href='contacto.html'">Contacto</button>
+        </section>
+
+
+            <!-- Imagen grande en todo el ancho de la pantalla con texto sobre ella -->
+        <section class="full-width-image-section">
+            <img src="img/imagenpie2.png" alt="Imagen Ancha" class="full-width-image">
+            <div class="overlay-text">
+                <div class="texto-side">
+                    <h2>¡Prepárate para vivir una experiencia inolvidable en Popayán!</h2>
+                    <p>
+                        Explora nuestra ciudad, sumérgete en su historia, disfruta de su cultura, y descubre por qué
+                        Popayán es
+                        un destino
+                        que enamora.
+                        ¡Te esperamos con los brazos abiertos!
+                    </p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Imagen a la izquierda y texto a la derecha -->
-    <section class="content-section">
-        <div class="content-left">
-            <img src="img/iglesia.jpg" alt="Imagen Izquierda" class="side-image">
-        </div>
-        <div class="content-right">
-            <div class="texto-side">
-                <h2>¿Por qué deberías visitar Popayán?</h2>
-                <p>
-                    Visitar Popayán es descubrir una ciudad donde la historia y la cultura brillan en cada rincón. La
-                    Ciudad
-                    Blanca te invita a recorrer su arquitectura colonial, disfrutar de sus festividades y saborear su
-                    deliciosa gastronomía. Cada visita a Popayán te ofrece una experiencia única y memorable.
-                </p>
+
+        <!-- Pie de página con botones (footer original) -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img src="img/logo_color.png" alt="Logo de color Popayán">
+                        </a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://www.popayan.gov.co/" target="_blank">
+                            <img src="img/logopopayan.png" alt="Logo alcaldía de Popayán">
+                        </a>
+                        <a href="https://cinecultivo.com/" target="_blank">
+                            <img src="img/logo_cinecultivo.png" alt="CineCultivo">
+                        </a>
+                        <a class="logo_fup" href="https://fup.edu.co/" target="_blank">
+                            <img src="img/logo_fup.png" alt="Logo FUP">
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Dos botones centrados debajo del punto 4 (imagen la iglesia) -->
-    <section class="center-buttons">
-        <button class="explorar-rutas" onclick="location.href='rutas.html'">Explorar Rutas</button>
-        <button class="calendario-eventos" onclick="location.href='calendario.html'">Calendario de Eventos</button>
-    </section>
-
-    <!-- Imagen a la derecha y texto a la izquierda (invertido respecto a la anterior) -->
-    <section class="content-section inverted">
-        <div class="content-left">
-            <div class="texto-side">
-                <h2>Un poco de nuestra historia</h2>
-                <p>
-                    Fundada en 1537, Popayán es una de las ciudades más antiguas de Colombia, conocida por su
-                    arquitectura
-                    colonial y su papel central en la historia del país. A lo largo de los siglos, ha sido un importante
-                    centro político, religioso y cultural.
-                </p>
-            </div>
-        </div>
-        <div class="content-right">
-            <img src="img/imagenhistoria.jpg" alt="Imagen Derecha" class="side-image">
-        </div>
-    </section>
-
-    <!-- Otros dos botones centrados debajo del punto 6 (imagen de la historia) -->
-    <section class="center-buttons">
-        <button class="ver-cortometrajes" onclick="location.href='cortometrajes.html'">Ver Cortometrajes</button>
-        <button class="contacto" onclick="location.href='contacto.html'">Contacto</button>
-    </section>
-
-    <!-- Imagen grande en todo el ancho de la pantalla con texto sobre ella -->
-    <section class="full-width-image-section">
-        <img src="img/imagenpie2.png" alt="Imagen Ancha" class="full-width-image">
-        <div class="overlay-text">
-            <div class="texto-side">
-                <h2>¡Prepárate para vivir una experiencia inolvidable en Popayán!</h2>
-                <p>
-                    Explora nuestra ciudad, sumérgete en su historia, disfruta de su cultura, y descubre por qué
-                    Popayán es
-                    un destino
-                    que enamora.
-                    ¡Te esperamos con los brazos abiertos!
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pie de página con botones (footer original) -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-logo">
-                <a href="index.html">
-                    <img src="img/logo_color.png" alt="Logo de color Popayán">
-                </a>
-            </div>
-            <div class="footer-links">
-                <a href="https://www.popayan.gov.co/" target="_blank">
-                    <img src="img/logopopayan.png" alt="Logo alcaldía de Popayán">
-                </a>
-                <a href="https://cinecultivo.com/" target="_blank">
-                    <img src="img/logo_cinecultivo.png" alt="CineCultivo">
-                </a>
-                <a class="logo_fup" href="https://fup.edu.co/" target="_blank">
-                    <img src="img/logo_fup.png" alt="Logo FUP">
-                </a>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 <script src="js/scripts.js"></script>
 <script src="js/parrilla.js"></script>

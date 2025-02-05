@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/capitulos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,700;1,400&display=swap" rel="stylesheet">  
+    <title>Visit Popayán - Cap&iacute;tulo 3</title>
+</head>
+<body>
+    <div class="main-container-capitulo">
+      <div class="content-container-capitulo">
+        <div class="left-stripe">
+        <img src="/img/franja-doble-left.png" alt="">
+        </div>
+        <div class="content-capitulo">
+          <div class="content-capitulo-row1">
+            <div class="video-capitulo">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/JclRJpNkoh4?si=ZuX4ykqCz_PMFwkh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <!-- BOTONES NEXT - PREVIEW -->
+              <div class="botones-next-preview">
+                <a class="a-button" href="/capitulo2.html">
+                  <img src="/img/botones/angulo-izquierdo.png" alt="">
+                </a>
+                <a class="a-button" href="/index.html">
+                  <img src="/img/botones/home.png" alt="">
+                </a>
+                <a class="a-button" href="/capitulo4.html">
+                  <img src="/img/botones/angulo-derecho.png" alt="">
+                </a>
+              </div>
+
+            </div>
+            <div class="texto-capitulo">
+              <h3>Cap&iacute;tulo 3</h3>
+              <h1>Popayán<br>Capital de las Culturas</h1>
+              <p>Popayán tiene un legado multicultural inigualable, es una ciudad que acoge y enamora a sus visitantes. Descubre su historias y los rostros que te llevarán a través de una viaje en el tiempo.</p>
+
+            </div>
+          </div>
+
+          <div class="galeria">
+            <div class="galeria-item">
+              <img src="/img/galerias/cap3_f1.jpg" alt="">
+            </div>
+            <div class="galeria-item">
+              <img src="/img/galerias/cap3_f2.jpg" alt="">
+            </div>
+            <div class="galeria-item">
+              <img src="/img/galerias/cap3_f3.jpg" alt="">
+            </div>
+            <div class="galeria-item">
+              <img src="/img/galerias/cap3_f4.jpg" alt="">
+            </div>
+          </div>
+
+          <div id="popupImagen" class="popup">
+            <span class="cerrar" onclick="cerrarPopup()">&times;</span>
+            <img class="contenido-popup" id="imagenAmpliada">
+            <button class="btn-izquierda" onclick="cambiarImagen(-1)">&#10094;</button>
+            <button class="btn-derecha" onclick="cambiarImagen(1)">&#10095;</button>
+          </div>
+
+        </div>
+
+        <div class="right-stripe">
+          <img src="/img/ornamento_esquina_sd.png" alt="">
+        </div>
+      </div>
+
+      <div class="nav-rrss">
+        <!-- enlace a RRSS -->
+        <a class="nav-rrss__item link-ig" href="https://www.instagram.com/turismoenpopayan" target="_blank">
+          <div class="container__img--ig">
+            <img src="img/botones/logotipo-de-instagram.png" alt="Instagram" title="Instagram">
+          </div>
+        </a>
+        <a class="nav-rrss__item link-fb" href="https://www.facebook.com/TurismoenPopayan" target="_blank">
+          <div class="container__img--fb">
+            <img src="img/botones/logotipo-de-facebook.png" alt="facebook" title="Facebook">
+          </div>
+        </a>
+        <!-- enlace a pagina contacto -->
+        <a class="nav-rrss__item link-cto" href="contacto.html">
+          <div class="container__img--contacto">
+            <img src="img/botones/contacto.png" alt="Contacto" title="Contacto">
+          </div>
+        </a>
+      </div>
+      
+      <div class="footer-container-capitulo">
+        <div class="container-menu-footer">
+          <!-- logo alcaldia -->
+          <a class="logo-alcaldia" href="https://www.popayan.gov.co/" target="_blank">
+            <img src="/img/logo-cierre-alcalda-popayan.png" alt="Logo alcaldía de Popayán">
+          </a>
+
+          <div class="nav__rrss--mobile">
+            <!-- enlace a RRSS -->
+            <a class="link-contacto" href="https://www.instagram.com/turismoenpopayan" target="_blank">
+              <div class="btn-link-contacto btn-link-rrss">
+                <img src="img/botones/logotipo-de-instagram.png" alt="Instagram" title="Instagram">
+              </div>
+            </a>
+            <a class="link-contacto" href="https://www.facebook.com/TurismoenPopayan" target="_blank">
+              <div class="btn-link-contacto btn-link-rrss">
+                <img src="img/botones/logotipo-de-facebook.png" alt="Facebook" title="Facebook">
+              </div>
+            </a>
+            <!-- enlace a pagina contacto -->
+            <a class="link-contacto" href="contacto.html">
+              <div class="btn-link-contacto">
+                <img src="img/botones/contacto.png" alt="Contacto" title="Contacto">
+              </div>
+            </a>
+          </div>
+
+          <!-- logo cinecultivo -->
+          <a class="logo-cinecultivo" href="https://cinecultivo.com" target="_blank">
+            <img src="/img/logo_cinecultivo.png" alt="">
+          </a>
+          <!-- enlace a menu -->
+          <a class="link-menu" href="/index.html">
+            <div class="btn-link-menu">
+              <img src="/img/botones/home.png" alt="boton menú" title="Menú de capítulos">
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script src="/parrilla.js"></script>
+    <script src="fotos.js"></script>
+
+</body>
+</html>

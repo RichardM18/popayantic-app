@@ -23,7 +23,7 @@
     color: white;
 }
 
-button {
+/* button {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -35,8 +35,11 @@ button {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+} */
+body {
+    margin: 0;
+    padding: 0;
 }
-
 /* Estilo de texto para la info al lado de las imágenes */
 .texto-side {
     font-size: 25px;
@@ -49,10 +52,13 @@ button {
     width: 100%;
     height: 700px;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .intro-image {
-    width: 100%;
+    width: 101%;
     height: 100%;
     object-fit: cover;
 }
@@ -80,42 +86,165 @@ button {
     display: flex;
     align-items: center;
     padding: 40px 20px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
-.content-left {
-    flex: 1;
+.content-section_right {
+    display: flex;
+    align-items: center;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    margin: 20px;
 }
 
-.side-image {
-    width: 100%;
-    max-width: 4000px;
-    border-radius: 15px;
-}
-
+.content-left, .content-left_2,
 .content-right {
     flex: 1;
-    padding: 0 30px;
 }
 
-/* Botones centrados */
-.center-buttons {
+.side-image, .side-image_right {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+}
+
+.side-image_right {
+    margin-left: 50px;
+}
+
+/* Ajustes para móviles */
+@media (max-width: 768px) {
+    .content-section, .content-section_right {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .content-left, .content-left_2, .content-right {
+        width: 100%;
+        padding: 10px 15px;
+        text-align: center;
+    }
+
+    .side-image_right {
+        margin-left: 0;
+    }
+}
+
+
+
+/* Ajuste para que la imagen quede abajo en móviles */
+
+
+@media (max-width: 768px) {
+    .content-section_right {
+        flex-direction: column-reverse; /* Invierte el orden en móviles */
+    }
+
+    .content-left, 
+    .content-right {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .content-right img, 
+    .content-left img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .side-image_right{
+
+        max-width: 100%;
+    }
+}
+
+
+/* Sección de Historia */
+.history-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.history-text {
+    flex: 1;
     display: flex;
     justify-content: center;
+}
+
+.history-content {
+    max-width: 500px;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.history-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.history-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .history-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .history-image {
+        order: 2; /* Se asegura que la imagen vaya abajo */
+    }
+
+    .history-text {
+        order: 1; /* Se asegura que el texto quede arriba */
+    }
+
+    .history-content {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .history-img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+}
+
+
+/* Botones centrados */
+.center-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Asegura alineación vertical */
+    gap: 20px; /* Reduce la separación entre botones */
     margin: 20px 0;
-    font-size: 20px;
 }
 
 .center-buttons button {
     font-size: 20px;
     border: none;
-    padding: 20px 30px;
-    margin: 0 60px;
+    padding: 20px 10px;
     border-radius: 15px;
     cursor: pointer;
 }
 
 .center-buttons button:hover {
-    background-color: #3b3b3b;
+    background-color: #5c5c5c;
 }
 
 /* Invertido: Imagen a la derecha y texto a la izquierda */
@@ -130,8 +259,9 @@ button {
 /* Imagen grande en todo el ancho de la pantalla con texto sobre ella */
 .full-width-image-section {
     position: relative;
+    margin: 0%;
     width: 100%;
-    height: 800px;
+    height: 1100px;
 }
 
 .full-width-image {
@@ -148,8 +278,9 @@ button {
     color: white;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    padding: 60px;
     border-radius: 15px;
+    
 }
 
 .overlay-text h2 {
@@ -158,18 +289,22 @@ button {
 
 /* Estilos para las franjas laterales */
 .parrilla--section__main {
-    position: relative; /* Contenedor relativo para las franjas */
+    position: relative;
+    /* Contenedor relativo para las franjas */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background-color: #f9f9f9; /* Fondo claro para la sección */
-    margin-top: 80px; /* Espacio arriba */
-    margin-bottom: 80px; /* Espacio abajo */
+    background-color: #f9f9f9;
+    /* Fondo claro para la sección */
+    margin-top: 80px;
+    /* Espacio arriba */
+    margin-bottom: 80px;
+    /* Espacio abajo */
 }
 
 .section__main-content {
-    position: relative; 
+    position: relative;
     display: flex;
     width: 100%;
     max-width: 1200px;
@@ -181,58 +316,74 @@ button {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 10%; /* Ancho de las franjas */
-    z-index: 1; /* Asegura que estén detrás del contenido central */
+    width: 10%;
+    /* Ancho de las franjas */
+    z-index: 1;
+    /* Asegura que estén detrás del contenido central */
 }
 
 .section__main--left {
     left: 0;
-    text-align: left; /* Alineamos la imagen a la izquierda */
+    text-align: left;
+    /* Alineamos la imagen a la izquierda */
 }
 
 .section__main--right {
     right: 0;
-    text-align: right; /* Alineamos la imagen a la derecha */
+    text-align: right;
+    /* Alineamos la imagen a la derecha */
 }
 
 .section__main--left img,
 .section__main--right img {
-    height: 100%; /* La imagen ocupa toda la altura de la franja */
-    width: auto; /* Aseguramos que la imagen no se deforme */
-    max-width: 100%; /* Evitamos que la imagen se desborde */
+    height: 100%;
+    /* La imagen ocupa toda la altura de la franja */
+    width: auto;
+    /* Aseguramos que la imagen no se deforme */
+    max-width: 100%;
+    /* Evitamos que la imagen se desborde */
 }
 
 /* Ajustes para el contenido central */
 .section__main--center {
-    width: 80%; /* Reducimos el ancho del contenido central */
-    margin: 0 auto; /* Centramos el contenido */
+    width: 80%;
+    /* Reducimos el ancho del contenido central */
+    margin: 0 auto;
+    /* Centramos el contenido */
     padding: 0 20px;
     position: relative;
-    z-index: 2; /* Aseguramos que el contenido central esté por encima de las franjas */
+    z-index: 2;
+    /* Aseguramos que el contenido central esté por encima de las franjas */
 }
 
 /* Responsividad: Ocultar franjas en móviles */
 @media screen and (max-width: 768px) {
+
     .section__main--left,
     .section__main--right {
-        display: none; /* Ocultamos las franjas en dispositivos móviles */
+        display: none;
+        /* Ocultamos las franjas en dispositivos móviles */
     }
 
     .section__main--center {
-        width: 100%; /* El contenido central ocupa todo el ancho en móviles */
+        width: 100%;
+        /* El contenido central ocupa todo el ancho en móviles */
         padding: 0;
     }
 }
 
 /* Responsividad: Ocultar franjas en móviles */
 @media screen and (max-width: 768px) {
+
     .section__main--left,
     .section__main--right {
-        display: none; /* Ocultamos las franjas en dispositivos móviles */
+        display: none;
+        /* Ocultamos las franjas en dispositivos móviles */
     }
 
     .section__main--center {
-        width: 100%; /* El contenido central ocupa todo el ancho en móviles */
+        width: 100%;
+        /* El contenido central ocupa todo el ancho en móviles */
         padding: 0;
     }
 }
@@ -335,5 +486,46 @@ button {
 
     .nav-rrss {
         display: none;
+    }
+}
+
+
+/* Evita que el contenido se desborde en móviles */
+.container-wrapper {
+    max-width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+/* Ajusta los textos y evita que se salgan del contenedor */
+.texto-side p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+/* Asegura que las imágenes no generen scroll horizontal */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajusta la imagen y el texto en móviles */
+@media (max-width: 768px) {
+    .content-section,
+    .content-section_right {
+        flex-direction: column-reverse; /* Mueve la imagen abajo */
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-left, .content-right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .content-right img, .content-left img {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
 }
