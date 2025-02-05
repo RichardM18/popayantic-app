@@ -8,7 +8,11 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/capitulos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,8 +20,8 @@
     <nav class="floating-menu2">
         <!-- Contenedor del icono de hamburguesa y la imagen -->
         <div class="hamburger-container">
-            <img src="img/logo_color.png" alt="Inicio" class="inicio-icon"> <!-- Asegúrate de que el archivo esté en la ruta correcta -->
-            <span class="hamburger-icon">&#9776;</span> <!-- Icono de hamburguesa -->
+            <img src="img/logo_color.png" alt="Inicio" class="inicio-icon">
+            <span class="hamburger-icon">&#9776;</span>
         </div>
 
         <!-- Lista de menú -->
@@ -29,7 +33,43 @@
         </ul>
     </nav>
 
-    <!-- Imagen grande introductoria detrás del menú creo xd -->
+    <!-- Sección de los cortometrajes (movida al inicio) -->
+<div class="parrilla--section__main">
+    <div class="header__menu--logo-popayan">
+        <img src="img/logo_color.png" alt="">
+    </div>
+    <div class="section__main-content">
+        
+
+        <!-- Contenido central -->
+        <div class="section__main--center">
+            <div class="texto-inicial">
+                <p>
+                    Sigue en cada capítulo las aventuras de estos viajeros
+                </p>
+            </div>
+            
+            <div class="capitulos">
+                <!-- fn js -->
+            </div>
+            <nav>
+                <ul class="submenu-capitulos">
+                    <!-- fn js -->
+                </ul>
+            </nav>
+    
+            <div class="texto-final">
+                <p>
+                    Visita Popayán y vive un viaje en el tiempo
+                </p>
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+    <!-- Imagen grande introductoria detrás del menú-->
     <section class="intro-section">
         <img src="img/imageninicio.png" alt="Imagen de Bienvenida" class="intro-image">
         <div class="overlay-text-intro">
@@ -109,7 +149,7 @@
         </div>
     </section>
 
-    <!-- Pie de página con botones -->
+    <!-- Pie de página con botones (footer original) -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
@@ -131,7 +171,9 @@
         </div>
     </footer>
 </body>
-
 <script src="js/scripts.js"></script>
-
+<script src="js/parrilla.js"></script>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/futura-lt');
+</style>
 </html>

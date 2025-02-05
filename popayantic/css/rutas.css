@@ -32,7 +32,7 @@ body {
   width: 320px; /* Box dimensions */
   height: 430px; 
   
-  border-radius: 4px; /* Styling */
+  border-radius: 15px; /* Styling */
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);  
   transition: box-shadow 0.56s ease-in-out; /* Animation */
   /* background-color: rgba(0,0,0,.2); /* for debugging */
@@ -102,7 +102,7 @@ body {
     background:  rgba(2, 0, 0, 0.479);;
     color: white;
     padding: 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     width: 100%;
 }
 
@@ -123,7 +123,7 @@ body {
 .card__list li {
     
     padding: 7px; /* Aumenta el relleno interno */
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 1rem;
 }
 
@@ -162,7 +162,7 @@ body {
     font-size: 20px;
     padding: 10px 20px;
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
     cursor: pointer;
 }
 /*Color del botón 1*/
@@ -225,7 +225,7 @@ body {
     height: 400px;
     margin: 0 auto;
     border: 2px solid #ddd;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 /* Estilos para las tarjetas de rutas turísticas */
@@ -239,7 +239,7 @@ body {
 
 .ruta-card {
     background-color: #f8f8f8;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -271,7 +271,7 @@ ul li {
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
 }
 
@@ -297,7 +297,7 @@ ul li {
 /* Estilos para las tarjetas de rutas turísticas */
 .ruta {
     background-color: rgb(47, 56, 81); /* Fondo */
-    border-radius: 10px; /* Bordes redondeados */
+    border-radius: 15px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(197, 6, 6, 0.1); /* Sombra para un efecto 3D */
     padding: 20px; /* Espaciado interno */
     margin: 20px auto; /* Espaciado externo y centrado */
@@ -309,7 +309,7 @@ ul li {
 .ruta img {
     width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
     height: auto; /* La altura se ajusta automaticamente */
-    border-radius: 10px 10px 0 0; /* Bordes redondeados solo en la parte superior */
+    border-radius: 15px 15px 0 0; /* Bordes redondeados solo en la parte superior */
     object-fit: cover; /* Asegura que la imagen se ajuste sin deformarse */
     max-height: 200px; /* Limita la altura de la imagen */
     margin-bottom: 15px; /* Espaciado debajo de la imagen */
@@ -322,7 +322,7 @@ ul li {
     color: white;
     background-color: #007bff;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 15px;
     margin-top: 15px;
 }
 
@@ -355,7 +355,7 @@ main {
     width: 45%;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 

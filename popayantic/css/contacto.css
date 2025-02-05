@@ -4,6 +4,7 @@ body, html {
     background-color: #f0f0f0;
     font-family: 'Istok Web', sans-serif;
     height: 100%; /* Aseguramos que la página ocupe toda la altura */
+    font-family: 'Futura',Trebuchet MS,Arial,sans-serif;
 }
 
 /* Contenedor para la tarjeta centrada */
