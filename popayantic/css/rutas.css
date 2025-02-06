@@ -209,7 +209,7 @@ body {
 }
 
 .revisalen-btn-4:hover {
-    background-color: #960956; /* Cambia el color cuando se pase el mouse */
+    background-color: #960956; /*  Cambia el color cuando se pase el mouse */
 }
 
 
@@ -225,6 +225,8 @@ body {
     margin: 0 auto;
     border: 2px solid #ddd;
     border-radius: 15px;
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* Estilos para las tarjetas de rutas turísticas */
